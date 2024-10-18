@@ -7,7 +7,7 @@ A **React-based movie browsing application** that allows users to **search, expl
 ## 🌐 Live Demo
 
 Check out the live version of the project:  
-[Netflix Clone]()
+[Netflix Clone](https://netflix-clone-eight-eta-47.vercel.app/)
 
 ---
 
@@ -72,7 +72,7 @@ Check out the live version of the project:
 
 1. **Login User**  
    **POST**:  
-   [https://netflixclone-5hqh.onrender.com/api/v1/user/login](https://netflixclone-5hqh.onrender.com/api/v1/user/login)  
+   [https://netflix-clone-tdxz.onrender.com/api/v1/user/login](https://netflix-clone-tdxz.onrender.com/api/v1/user/login)  
    **Request Body**:
    ```json
    {
@@ -82,7 +82,7 @@ Check out the live version of the project:
    ```
 2. **Register User**  
     **POST**:  
-    [https://netflixclone-5hqh.onrender.com/api/v1/user/register](https://netflixclone-5hqh.onrender.com/api/v1/user/register)  
+    [https://netflix-clone-tdxz.onrender.com/api/v1/user/register](https://netflix-clone-tdxz.onrender.com/api/v1/user/register)  
     **Request Body**:
    ```json
    {
@@ -98,7 +98,7 @@ Check out the live version of the project:
 
 1. **Clone the repository**:
    ```bash
-   git clone 
+   git clone https://github.com/nawabkhan89646/Netflix-Clone.git
    cd netflix
    npm install
    ```

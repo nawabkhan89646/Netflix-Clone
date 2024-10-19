@@ -12,9 +12,10 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 const corsOptions = {
-    origin: ['https://netflix-clone-eight-eta-47.vercel.app/'],
+    origin: ['https://netflix-clone-eight-eta-47.vercel.app/', 'https://netflix-clone-tdxz.onrender.com'],
     credentials: true, // Allow cookies to be sent
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
 

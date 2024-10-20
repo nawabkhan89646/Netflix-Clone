@@ -22,8 +22,14 @@ const corsOptions = {
 // Use CORS middleware
 app.use(cors(corsOptions));
 
-// Handle preflight requests for all routes
-app.options('*', cors(corsOptions)); // This is crucial for preflight requests
+// Explicitly handle preflight requests
+app.options('*', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "https://netflix-clone-indol-chi-65.vercel.app");
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.header("Access-Control-Allow-Credentials", "true");
+    return res.status(200).json({});
+});
 
 app.use(express.json());
 app.use(cookieParser());
